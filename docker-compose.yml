@@ -1,0 +1,14 @@
+version: '3'
+services:
+       exnoremo-company:
+            image: videogorusme
+            container_name: videogorusme
+            restart: always
+            ports:
+                  - 3030:3030
+            volumes:
+                  - C:\Users\Deniz\Desktop\video-gorusme:/video-gorusme/
+networks:
+    default:
+        name: nginx_default
+        external: true
